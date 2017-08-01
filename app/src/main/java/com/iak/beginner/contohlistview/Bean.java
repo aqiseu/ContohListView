@@ -1,0 +1,40 @@
+package com.iak.beginner.contohlistview;
+
+/**
+ * Created by aqiseu on 8/1/2017.
+ */
+
+public class Bean {
+
+    private int imageId;
+    private String title;
+    private String desc;
+
+    public Bean(int imageId, String title, String desc) {
+        this.imageId = imageId;
+        this.title = title;
+        this.desc = desc;
+    }
+    public int getImageId() {
+        return imageId;
+    }
+    public void setImageId(int imageId) {
+        this.imageId = imageId;
+    }
+    public String getDesc() {
+        return desc;
+    }
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    @Override
+    public String toString() {
+        return title + "\n" + desc;
+    }
+}
